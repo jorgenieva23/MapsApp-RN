@@ -190,8 +190,8 @@
 			);
 			dependencies = (
 			);
-			name = permissionsApp;
-			productName = permissionsApp;
+			name = ;
+			productName = ;
 			productReference = 13B07F961A680F5B00A75B9A /* permissionsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
