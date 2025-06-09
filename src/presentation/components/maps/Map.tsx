@@ -74,16 +74,6 @@ export const Map = ({ showsUserLocation = true, initialLocation }: Props) => {
             strokeWidth={5}
           />
         )}
-
-        {/* <Marker 
-            coordinate={{
-              latitude: 37.78825,
-              longitude: -122.4324,
-            }}
-            title="Este es el título del marcador"
-            description="Este es el cuerpo del marcador"
-            image={ require('../../../assets/marker.png') }
-          /> */}
       </MapView>
 
       <FAB

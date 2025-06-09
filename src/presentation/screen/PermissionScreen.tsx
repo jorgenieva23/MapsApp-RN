@@ -1,8 +1,6 @@
-import { View, Text } from 'react-native';
-import React from 'react';
-import { Pressable } from 'react-native-gesture-handler';
-import { globalStyles } from '../../config/theme/styles';
+import { Pressable, Text, View } from 'react-native';
 import { usePermissionStore } from '../store/permissions/usePermissionStore';
+import { globalStyles } from '../../config/theme/styles';
 
 export const PermissionScreen = () => {
   const { locationStatus, requestLocationPermission } = usePermissionStore();
@@ -12,12 +10,12 @@ export const PermissionScreen = () => {
       <Text>Habilitar ubicación</Text>
 
       <Pressable
-        onPress={requestLocationPermission}
-        style={globalStyles.btnPrimary}>
-        <Text style={{ color: 'white' }}>habilitar localización</Text>
+        style={globalStyles.btnPrimary}
+        onPress={requestLocationPermission}>
+        <Text style={{ color: 'white' }}>Habilitar Localización</Text>
       </Pressable>
 
-      <Text>Estado Actual:{locationStatus}</Text>
+      <Text>Estado actual: {locationStatus}</Text>
     </View>
   );
 };
